@@ -1,12 +1,14 @@
-import pandas as pd
 import os
-import smipy as smipy
 import re
 import warnings
+
+import pandas as pd
 from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 
+import smipy as smipy
+
 CSV_ENCODING = 'cp949'
-REPLACE = True
+REPLACE = False
 
 ##########################################
 #
@@ -50,7 +52,6 @@ def make_indexing(sminames, output_name, movie_dir, verbose = False):
             end_time = sub['end']
 
             if eng_sentence is not None:
-                eng_sentence = to_sentence(eng_sentence)
                 token_list = to_tokens(eng_sentence)
 
                 for word in token_list:
@@ -282,6 +283,12 @@ def make_clip(words_path, title, out_dir = './clips', pad = 2000, encoding = CSV
 #############################################################
 #       Helpers
 #############################################################
+import time
+def cur_string():
+    tm = time.localtime()
+    return '%2d%2d%2d'%(tm.tm_hour, tm.tm_min, tm.tm_sec)
+
+
 def is_contain(word, sent_list):
     contain = False
     for sent in sent_list:

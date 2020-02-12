@@ -7,6 +7,8 @@ import prepare
 
 SMI_PADDING = 60000
 
+CSV_ENCODING = 'cp949'
+
 class Smi:
     def __init__(self, filepath = None, **kwargs):
         self.eng_signal = None
@@ -31,8 +33,6 @@ class Smi:
             except:
                 raise SamitizeError(-2)
         else:
-            # detector = ['/usr/bin/env', 'uchardet', filepath]
-            # encoding_detected = subprocess.check_output(detector).decode('utf-8').strip().lower()
             try:
                 file = codecs.open(filepath, encoding='EUC-KR')
                 self.raw_text = file.read()
@@ -52,7 +52,6 @@ class Smi:
         self.raw_text = self.raw_text.replace('\r\n', '\n')
         self.raw_text = self.raw_text.replace('\n\r', '\n')
 
-        # Detecting smi information
         # Detecting signal for sinc verification
         #주석 <!--~-->
         re_comment = re.compile('<!--\n+(.+)\n+-->')
@@ -64,6 +63,7 @@ class Smi:
                     self.sinc_verification = True
 
         # Detect Korean / English key
+        # 한 키가 None이면 해당 자막은 없다고 보면 됨
         re_sig = re.compile('Class=(.*)>')
         signals = set(re_sig.findall(self.raw_text))
         for sig in signals:
@@ -79,12 +79,8 @@ class Smi:
                 elif 'kr' in sig.lower():
                     self.kor_signal = sig
 
-        # 시그널 2개가 아닐경우 예외 처리
-
-        # Greedy compile
         re_line = re.compile('<SYNC Start=([0-9]+)><P Class=(\w+)>\n?(.*)\n')
         #패턴 : <SYNC Start=(1258654)><P Class=EnglishSC> 하고 (문자1이상) + \n<, greedy compile
-
         lines = re_line.findall(self.raw_text)
 
         if debug == True:
@@ -158,19 +154,19 @@ class Smi:
                     self.subtitles.append(s)
                     i_k +=1
 
-    def to_csv(self, title ,output_path = './', all = False, encoding = 'EUC-KR'):
+    def to_csv(self, title, dest ='./', all = False, encoding ='EUC-KR'):
         subdf = pd.DataFrame.from_dict(self.subtitles)
-        sub_path = prepare.get_save_path(output_path, title, format ='.csv')
+        sub_path = prepare.get_save_path(dest, title, format ='.csv')
         print('Saving to {}'.format(sub_path))
         subdf.to_csv(sub_path, encoding=encoding)
         if all:
             kordf = pd.DataFrame.from_dict(self._korsub)
-            kor_path = prepare.get_save_path(output_path, title + '_k', format='.csv')
+            kor_path = prepare.get_save_path(dest, title + '_k', format='.csv')
             print('Saving to {}'.format(kor_path))
             kordf.to_csv(kor_path, encoding=encoding)
 
             engdf = pd.DataFrame.from_dict(self._engsub)
-            eng_path = prepare.get_save_path(output_path, title + '_e', format='.csv')
+            eng_path = prepare.get_save_path(dest, title + '_e', format='.csv')
             print('Saving to {}'.format(eng_path))
             engdf.to_csv(eng_path, encoding=encoding)
 
@@ -188,37 +184,105 @@ class Smi:
             return sent_list, ind_list
 
 
-    def export(self, start_time = None, end_time = None, slice_manual = None):
+    def export(self, start_time = 0, end_time = 99999999, slice_manual = None):
         textlist = ['<SAMI>', '<BODY>']
         if slice_manual is not None:
             sentences = slice_manual
         else:
             sentences = [sent for sent in self.subtitles if sent['start'] >start_time and sent['end'] <end_time]
 
+        return export_smi(sentences, start_time)
 
-        engsig_out = 'EnglishSC'
-        korsig_out = 'KoreanSC'
-        for sent in sentences:
-            if len(sent['kor']) >= 1:
-                textlist.append('<SYNC Start={}><P Class={}>\n{}'.format(
-                    sent['start'] - start_time, korsig_out, sent['kor']))
+    def from_sentences(self, sentences):
+        self.eng_signal = 'EnglishSC'
+        self.kor_signal = 'KoreanSC'
+        self.subtitles = sentences
 
-            if len(sent['eng']) >=1:
-                textlist.append('<SYNC Start={}><P Class={}>\n{}'.format(
-                    sent['start'] - start_time, engsig_out, sent['eng']))
+        self.raw_text = export_smi(sentences)
+        self._korsub = []
+        self._engsub = []
+        self.sinc_verification = False
 
-            if len(sent['kor']) >= 1:
-                textlist.append('<SYNC Start={}><P Class={}>\n{}'.format(
-                    sent['end'] - start_time, korsig_out, '&nbsp;'))
-
-            if len(sent['eng']) >=1:
-                textlist.append('<SYNC Start={}><P Class={}>\n{}'.format(
-                    sent['end'] - start_time, engsig_out, '&nbsp;'))
+##################################################################
+# Class End
+##################################################################
 
 
-        textlist.append('</BODY>')
-        textlist.append('</SAMI>')
-        return '\n'.join(textlist)
+def export_smi(sentences, start_time = 0):
+    textlist = ['<SAMI>', '<BODY>']
+
+    engsig_out = 'EnglishSC'
+    korsig_out = 'KoreanSC'
+    for sent in sentences:
+        if len(sent['kor']) >= 1:
+            textlist.append('<SYNC Start={}><P Class={}>\n{}'.format(
+                sent['start'] - start_time, korsig_out, sent['kor']))
+
+        if len(sent['eng']) >= 1:
+            textlist.append('<SYNC Start={}><P Class={}>\n{}'.format(
+                sent['start'] - start_time, engsig_out, sent['eng']))
+
+        if len(sent['kor']) >= 1:
+            textlist.append('<SYNC Start={}><P Class={}>{}'.format(
+                sent['end'] - start_time, korsig_out, '&nbsp;'))
+
+        if len(sent['eng']) >= 1:
+            textlist.append('<SYNC Start={}><P Class={}>{}'.format(
+                sent['end'] - start_time, engsig_out, '&nbsp;'))
+
+    textlist.append('</BODY>')
+    textlist.append('</SAMI>')
+    return '\n'.join(textlist)
+
+def sort_sentence(sentences):
+    sentences = sorted(sentences, key = lambda x : x['start'])
+    same_time_buffer = []
+    results = []
+    for s in sentences:
+        if len(same_time_buffer) ==0:
+            same_time_buffer.append(s)
+        else: # list has some indices
+            if same_time_buffer[-1]['start'] == s['start'] and same_time_buffer[-1]['end'] == s['end']:
+                same_time_buffer.append(s)
+            else:
+                if len(same_time_buffer) ==1:
+                    results.append(same_time_buffer[0])
+                    same_time_buffer = []
+                else:
+                    #merge
+                    res = dict(start=same_time_buffer[0]['start'],
+                               end=same_time_buffer[0]['end'], kor='', eng='')
+                    for sames in same_time_buffer:
+                        if len(sames['kor']) >0 and sames['kor'] != 'nan':
+                            res['kor'] += ' ' + sames['kor']
+                        if len(sames['eng']) >0 and sames['eng'] != 'nan':
+                            res['eng'] += ' ' + sames['eng']
+                    res['kor'] = res['kor'].strip()
+                    res['eng'] = res['eng'].strip()
+                    results.append(res)
+                    same_time_buffer = []
+
+                same_time_buffer.append(s)
+    results.extend(same_time_buffer)
+    return results
+
+def csv_to_sentences(path, encoding = CSV_ENCODING):
+    #빈거 읽을때 char타입으로 있게 하기
+    # 안전하게 가기
+
+    df = pd.read_csv(path, encoding = encoding)
+    listofdicts = []
+    for row in df.iloc:
+        d = dict(row)
+        if d['eng'] == 'nan' or type(d['eng']) != type('text'): eng = ''
+        else: eng = d['eng']
+
+        if d['kor'] == 'nan' or type(d['kor'])!=  type('text') : kor = ''
+        else: kor = d['kor']
+
+        listofdicts.append(dict(start=int(d['start']), end=int(d['end']), kor='{}'.format(kor), eng='{}'.format(eng)))
+
+    return listofdicts
 
 class SamitizeError(Exception):
 
@@ -248,8 +312,3 @@ class SamitizeError(Exception):
 
     def __unicode__(self):
         return self.__str__()
-
-
-
-
-

@@ -14,6 +14,8 @@ CSV_ENCODING = 'cp949'
 #   번역 쪼개서도 가능함. 근데 굳이 그래야 할까?
 #   일단 너무많이 한번에 하면 안된다는거만 알자.
 #
+#   wordlist_rev 받아서 번역하기
+#
 ###############################
 NAVER_CLIENT_ID = '78kh5kk9mi'
 with open('./secret.txt', 'r') as f:

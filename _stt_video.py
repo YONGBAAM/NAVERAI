@@ -30,17 +30,26 @@ NAVER_CLIENT_SECRET = NAVER_CLIENT_SECRET.strip()
 #
 ###############################
 
-def slice_video(video_name, dir, sec = 55):
+def slice_video(video_name, dir, sec = 14.8, overlap = 1):
+    #with overlap
+    # 15초에 오버랩 주기 수정
     clip = VideoFileClip(os.path.join(dir, video_name))
-    author = 'YB'
     duration = clip.duration
-    out_names = []
-    for i in range(int(np.ceil(duration/sec))):
-        out_name = video_name.split('.')[0] + '_%2d'%i+ '.' + video_name.split('.')[1]
-        ffmpeg_extract_subclip(filename = os.path.join(dir, video_name), t1 = i*sec, t2 = (i+1)*sec,
-                               targetname= os.path.join(dir, out_name))
-        out_names.append(out_name)
-    return out_names
+    n_slice =  int(np.ceil((duration - overlap)/(sec-overlap)))
+
+    out_info = []
+    for i in range(n_slice):
+
+        out_name = video_name.split('.')[0] + '_%2d' % i + '.' + video_name.split('.')[1]
+        clip_start = i*(sec-overlap)
+        clip_end = clip_start + sec
+        sub_start = clip_start + overlap
+        sub_end = clip_end-overlap
+        ffmpeg_extract_subclip(filename = os.path.join(dir, video_name), t1 = clip_start, t2 = clip_end,
+                                   targetname= os.path.join(dir, out_name))
+        out_info.append(dict(out_name = out_name, clip_start = clip_start,
+                             clip_end= clip_end, sub_start = sub_start, sub_end = sub_end))
+    return out_info
 
 def get_audio(video_name, dir):
     #clip = VideoFileClip(os.path.join(dir, video_name))
