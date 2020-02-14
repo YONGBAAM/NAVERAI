@@ -1,0 +1,888 @@
+at the expense of ~의 비용으로
+02 business day n. 영업일
+03 claim v. 요청하다 n. 청구; 주장
+04 committed adj. 헌신적인
+05 compensate for ~를 보상하다
+06 consistency n. 일관성, 한결같음
+07 cover v. 다루다; 보장하다
+coverage n. 범위; 보상
+08 credit n. 신용판매, 신용 v. 입금하다
+09 defect n. 결함
+defective adj. 결함 있는
+10 demand v. 요구하다 n. 요구; 수요
+11 description n. 설명(서)
+12 eligibility n. 적격, 자격
+13 exchange v. 교환하다
+14 expire v. 만료되다, 만기되다
+expiration n. 만료, 만기, 종결
+15 flaw n. 결점, 결함
+16 guarantee v. 보장하다 n. 품질 보증서
+17 insurance n. 보험(금)
+18 malfunction
+v. 제대로 작동하지 않다 n. 고장, 기능 불량
+19 perfectly adv. 완벽하게
+20 period n. 기간
+21 rebate n. (초과 지불에 대한) 환불, 환급
+22 receipt n. 영수증
+23 reference number n. 조회 번호
+24 refund v. 환불하다 n. 환불(금)
+25 registration n. 등록, 신고
+26 reliable adj. 믿을 수 있는
+27 repair v. 수리[보수]하다 n. 수리, 수선
+28 replacement n. 교체, 교환
+29 restock v. 다시 채우다[보충하다]
+30 retailer n. 소매업체, 소매업자
+31 shipping and handling 
+n. 배송과 처리
+32 single adj. 단 하나의, 단일의
+33 solidify v. 굳히다, 확고히 하다
+34 status n. 상태; 지위
+35 take effect 효력을 발휘하다
+36 tested for defects 
+결함을 위해 검사된
+37 unrivaled adj. 경쟁자가 없는
+38 warranty n. 품질 보증서 
+accountable adj. 책임이 있는
+02 additional[extra] fee 추가 요금
+03 apologize for ~에 대해 사과하다
+04 business hours 
+n. 영업 시간, 근무 시간
+05 charge v. 청구하다 n. 요금
+06 client n. 의뢰인, 고객
+07 complaint n. 불만, 불평
+complain v. 불평하다
+08 compliment v. 칭찬하다 n. 칭찬
+09 consider v. 고려하다
+10 considerable adj. 상당한
+11 considerate adj. 사려 깊은, 배려하는
+12 consumer n. 소비자
+13 convince v. 확신시키다
+14 customer satisfaction 
+n. 고객 만족(도)
+15 delighted adj. 아주 기뻐하는
+16 extension n. 내선, 구내전화; 연장, 확대
+17 flexibility n. 융통성; 유연성
+18 for more information
+더 많은 정보를 원하시면
+19 helpful adj. 도움이 되는, 유용한
+20 hesitate v. 주저하다, 망설이다
+21 inconvenience n. 불편, 애로 사항
+22 informative adj. 유익한
+23 in regard to ~에 관하여
+24 in response to ~에 응하여
+25 make an inquiry 문의하다
+26 order v. 주문하다 n. 주문
+27 preferred customer n. 우대 고객
+28 price estimate n. 가격 견적서
+29 reasonable adj. (가격 등이) 합리적인
+30 recommendation n. 추천, 권고
+31 representative n. 직원; 대표(자)
+32 request n. 요구, 요청 v. 요청하다
+33 right away 곧장, 바로
+34 serve v. (상품, 서비스를) 제공하다
+35 terms and conditions n. 조건
+36 testimonial n. 추천서, 추천의 글
+37 without charge 무료로
+38 without delay 지체 없이 
+01 be obligated to ~할 의무가 있다
+02 bill v. 청구서를 보내다
+03 capacity n. 용량, 수용력
+04 clarify v. 명확히 (말)하다
+05 contact v. 연락하다
+06 counterfeit 
+adj. 위조의, 모조의 n. 모조품 v. 위조하다
+07 counterpart n. 상대
+08 customer service n. 고객 서비스
+09 deliver v. 배달하다
+delivery n. 배달
+10 depart v. 출발하다
+departure n. 출발
+11 despite prep. ~에도 불구하고
+12 discontinue v. 중단하다
+13 discount n. 할인
+14 disruption n. 혼란, 중단
+15 dissatisfaction n. 불만
+dissatisfy v. 불만을 느끼게 하다
+16 experience v. 겪다, 경험하다
+17 frustrating adj. 불만스러운
+18 inconsistency n. 불일치, 모순
+19 invalid adj. 무효의
+20 invoice n. 송장
+21 itemized adj. 항목별로 구분한
+itemize 
+v. 항목별로 적다, 명세서를 작성하다
+22 liability n. 법적 책임; 부채
+23 regarding prep. ~에 관하여
+24 reserve v. 예약하다
+reservation n. 예약
+25 return v. 돌려주다, 반납하다
+26 ship v. 수송하다
+shipment n. 수송, 배송
+27 turn down 거절하다
+28 unavailable adj. 이용할 수 없는
+29 understanding n. 이해
+understand v. 이해하다
+30 under warranty 
+(상품이) 보증 기간 중인
+31 unlikely adj. ~할 것 같지 않은
+32 unpleasant adj. 불쾌한
+33 urge v. 촉구하다, 강력히 얘기하다
+34 withdraw v. (돈을) 인출하다; 철회하다
+withdrawal n. 인출; 회수 
+appraisal n. 평가, 판단
+02 appreciate v. 고마워하다
+03 comment n. 논평, 언급
+04 conduct a survey 
+설문 조사를 하다
+05 confidential adj. 기밀의, 비밀의
+06 develop v. 개발하다
+development n. 개발
+07 essential adj. 필수적인
+08 evaluation n. 평가
+evaluate v. 평가하다
+09 excellent adj. 훌륭한, 탁월한
+10 fair adj. 괜찮은; 공정한
+11 feedback n. 피드백
+12 fill out 작성하다 (=complete)
+13 indicate v. 나타내다
+14 individual n. 개인 adj. 개개의
+15 information n. 정보
+16 interview n. 면접 v. 면접을 보다
+17 notify v. 알리다, 통지하다
+18 participant n. 참가자
+19 poor adj. 좋지 못한, 형편없는
+20 question and answer
+(session) n. 질의 응답 (시간)
+21 questionnaire n. 설문지
+22 relevant adj. 관련 있는, 적절한
+23 required adj. 필수의
+24 response n. 대답, 응답
+respondent n. 응답자
+25 sample v. 시식하다, 시도해 보다
+26 satisfy v. 만족시키다
+satisfaction n. 만족
+27 solely adv. 오로지
+28 somewhat adv. 약간, 다소
+29 standard n. 기준, 표준 adj. 보통의
+30 suggestion n. 제안
+suggest v. 제안하다
+31 suppose v. 가정하다, ~라고 생각하다
+32 survey n. 설문 조사 v. 설문 조사하다
+33 testing n. 테스트, 검사
+34 trial n. 시험, 실험 
+1 additional adj. 추가의
+add v. 더하다, 추가하다
+02 appealing adj. 흥미로운, 매력적인
+03 as a courtesy to ~에 대한 답례로서
+04 at no cost 무료로
+05 at no extra charge 추가 요금 없이
+06 become a member 회원이 되다
+07 beneficiary n. 수혜자
+08 benefit n. 혜택
+09 competitive adj. 경쟁력 있는
+10 complimentary adj. 무료의
+11 coupon n. 쿠폰, 할인권
+12 expiration date n. 유효기간, 만기일
+13 feature v. 특별히 포함하다 n. 특징
+14 figure out 이해하다; 계산하다
+15 form n. 양식, 서식 v. 구성하다
+16 free trial n. 무료 체험[시험]
+17 goods n. 상품, 제품
+18 in bulk 대량으로
+19 join v. 가입하다
+20 limited-time (시간이) 한정된
+21 membership card n. 회원증
+22 merchandise n. 상품
+23 offer v. 제공하다 n. 제공, 할인
+24 price n. 값, 가격
+25 promotional adj. 홍보의
+promote v. 홍보하다
+26 purchase 
+v. 구매하다 n. 구입, 구매(한 것)
+27 range n. 범위 v. (범위가 ~에) 이르다
+28 receive v. 받다
+29 reduced adj. 할인된
+30 referral n. 소개, 위탁
+31 refundable adj. 환불 가능한
+32 register v. 등록하다
+33 reward n. 보상
+34 sign up 등록하다
+35 subscribe v. 구독하다, 가입하다
+subscription n. 구독
+subscriber n. 구독자
+36 take advantage of ~을 이용하다
+37 valid adj. 유효한, 타당한
+38 voucher n. 할인권, 상품권
+ 
+applicant n. 지원자
+application n. 지원, 신청
+02 apply for ~에 지원하다
+03 asset n. 자산, 재원
+04 benefits package n. 복리 후생
+05 candidate n. 지원자, 후보자
+06 career n. 경력, 직장 생활
+07 career development n. 경력 개발
+08 certificate n. 증서, 증명서
+09 clerical adj. 사무직의
+10 cover letter n. 자기 소개서
+11 degree n. 학위
+12 diploma n. 졸업 증서
+13 eligible (for) adj. ~의 자격이 있는
+14 employ v. 고용하다
+employer n. 고용주
+employee n. 고용인, 직원
+employment n. 채용, 취업
+15 experienced in a related
+field 관련 분야의 경험이 있는
+16 familiarity n. 친숙함, 익숙함
+17 Human Resources
+(Department) n. 인사과
+18 ideal adj. 이상적인
+19 job interview n. 취업 면접
+20 job offer n. 일자리 제안
+21 job opening n. 빈자리, 공석
+22 job opportunity n. 취업 기회
+23 job search n. 구직
+24 job seeker n. 구직자
+25 look for 찾다, 구하다
+26 managerial adj. 경영의, 관리의
+27 newcomer n. 신입사원
+28 pension n. 연금
+29 permanent position n. 정규직
+30 personnel n. 직원(들); 인사과
+31 position n. 직위, 직책
+32 practical experience n. 실무 경험
+33 proficiency n. 숙련, 능숙
+34 qualified adj. 자격을 갖춘
+qualifications n. 자격 요건
+35 recruit n. 모집 v. 채용하다
+36 reference n. 추천서
+37 requirement n. 요건, 필수 조건
+38 wage n. 임금
+ 
+accomplishment n. 업적, 공적
+02 appoint v. 임명하다, 지명하다
+03 appraise v. (업무를) 평가하다
+04 authorize v. 재가하다, 권한을 부여하다
+05 demote v. 강등시키다, 좌천시키다
+06 dependable adj. 믿음직한 (= reliable)
+07 dismiss v. 해고하다
+dismissal n. 해고
+08 empower v. 권한을 주다
+09 expertise n. 전문 지식[기술]
+10 familiarize A with B 
+A를 B에 익숙해지게 하다
+11 feat n. 위업, 업적 (= achievement)
+12 get a promotion 
+승진하다 (= move up (to))
+13 honorable adj. 고결한, 명예로운
+14 industrious 
+adj. 근면한 (= hardworking, diligent)
+15 job description n. 직무 기술서
+16 leadership n. 지도력, 통솔력
+17 mandatory 
+adj. 의무적인 (= compulsory)
+18 nominate v. 추천하다, 지명하다
+19 performance evaluation
+n. 실적 평가
+20 praise v. 칭찬하다 n. 칭찬
+21 predecessor n. 전임자
+22 promotion n. 승진
+23 recognition n. 인정
+recognize v. 인정하다
+24 reinstate v. 복귀시키다
+25 replace A with B
+A를 B로 대체하다
+26 resign v. 사임하다, 사직하다
+27 resourceful 
+adj. 수단이 좋은, 기지가 있는
+28 retirement n. 은퇴, 퇴직
+retire v. 은퇴하다, 퇴직하다
+retiree n. 퇴직자
+29 skilled adj. 능숙한
+30 staff cutbacks n. 직원 감축
+31 substitute A for B
+B를 A로 대체하다
+32 successor n. 후임자, 계승자
+33 tenure n. 재임 기간
+34 transfer v. 전근 가다
+35 underestimate v. 과소평가하다
+ 
+1 accommodations n. 숙박시설
+02 accountant n. 회계사
+03 Accounting Department
+n. 회계부
+04 accounts payable n. 미지급금
+05 airfare n. 항공료
+06 anticipate v. 예상하다
+07 approve v. 승인하다
+approval n. 승인
+08 authorization n. 허가, 인가
+09 budget n. 예산
+10 cost-effective adj. 비용 효율이 높은
+11 cut n. 삭감 v. 삭감하다, 줄이다
+12 estimate n. 견적(서) v. 추산하다
+13 exceed v. 초과하다, 넘어서다
+14 expense report 
+n. 경비 보고서, 지출품의서
+15 figure n. 수치, 숫자
+16 handle v. 다루다, 처리하다
+17 incidental expenses 
+n. 부대비용, 잡비
+18 include v. 포함하다
+19 incur v. 초래하다
+20 issue v. 발행하다
+21 itinerary n. (여행) 일정표
+22 keep track of 
+~을 기록하다, 계속 파악하다
+23 mistakenly adv. 잘못하여, 실수로
+24 original receipt n. 영수증 원본
+25 payment n. 납입금
+26 payroll n. 급여
+27 prepaid adj. 선납된, 선불된
+28 procedure n. 절차, 방법
+29 process v. 처리하다 n. 과정; 공정
+30 raise v. 올리다, 인상하다
+31 reimbursement n. 변제, 상환
+32 report v. 보고하다, 알리다
+33 sales[business] trip n. 출장
+34 settlement n. 지불, 계산; 합의
+35 submit v. 제출하다
+36 substantial adj. 상당한 (양의)
+37 travel expense n. 여행 경비
+38 travel policy n. 출장 방침
+ 
+1 at the latest 늦어도
+02 be supposed to ~하기로 되어 있다
+03 cancel v. 취소하다
+04 cause v. 야기하다
+05 change v. 바꾸다, 수정하다 n. 변화
+06 commitment n. 약속, 전념
+07 complete 
+v. 완료하다, 끝마치다; 작성하다
+08 confirm v. 확인해 주다
+confirmation n. 확인
+09 cooperate v. 협력하다
+cooperation n. 협력, 협조
+10 engagement n. 약속; 공적인 업무
+11 ensure v. 반드시 ~하게하다
+12 flexible adj. 융통성이 있는, 유연한
+13 further adj. 추가의 adv. 더 (멀리)
+14 guideline n. 가이드라인, 지침
+15 hesitate v. 주저하다, 망설이다
+16 in advance 미리, 사전에
+17 install v. 설치하다
+installation n. 설치
+18 instead prep. ~ 대신에
+19 listing n. 리스트, 명단
+list n. 리스트, 명단 v. 목록을 작성하다
+20 measures n. 방안, 방법, 조치
+21 notification n. 알림, 공지
+22 observe v. 준수하다
+23 originally scheduled
+원래는 ~하기로 예정된
+24 participate v. 참가하다
+participation n. 참가
+25 postpone v. 미루다, 연기하다
+26 reach v. ~에게 연락하다
+27 regret v. 안타깝게 생각하다
+28 remind v. 상기시켜주다
+29 reschedule v. 일정을 변경하다
+30 safety n. 안전(성)
+31 scheduling conflict n. 일정이 겹침
+32 session n. (특정 활동) 시간; 회의
+33 take the place of ~의 일을 대신하다
+34 unexpected adj. 예기치 못한
+35 unforeseen adj. 뜻밖의, 예측하지 못한
+36 update 
+n. 최신정보 v. 업데이트하다, 갱신하다
+ 
+1 accurate adj. 정확한
+02 attachment n. 부착(물), 첨부물
+03 attention n. 주의, 주목
+attentive adj. 주의를 기울이는
+04 attire n. 의복, 복장
+05 call in sick 병가를 내다
+06 challenging adj. 도전을 요하는
+07 colleague n. 동료
+08 commuter n. 통근자
+09 company regulation n. 회사 규정
+10 day/night shift n. 주간/야간 근무
+11 demanding adj. 힘든, 까다로운
+12 document n. 서류, 문서
+documentation n. 증빙 서류
+13 draw up (계획을) 세우다, 작성하다
+14 duty n. 직무, 의무
+15 extend the deadline
+마감일을 연장하다
+16 facilitate v. 가능[용이]하게 하다
+17 forward a mail 메일을 전달하다
+18 generate v. 발생시키다
+19 improve the work
+environment
+작업환경을 개선하다
+20 make a copy 복사하다
+21 momentum n. 탄력, 가속도
+22 motivate v. 동기를 부여하다
+23 office equipment n. 사무기기
+24 office supplies n. 사무용품
+25 operate v. 조작하다, 가동하다
+26 overtime payment n. 초과근무 수당
+27 paperwork n. 문서 업무
+28 productivity n. 생산성
+29 refreshing adj. 신선한, 원기를 북돋우는
+30 staff lounge n. 직원 휴게실
+31 supervisor n. 관리자
+supervise v. 관리하다
+32 take some time off 잠시 쉬다
+33 under the supervision of
+~의 감시하에
+34 work efficiency n. 작업 효율성
+35 work extra hours 초과 근무하다
+36 workforce n. 인력
+37 working hours n. 근무 시간
+38 workplace n. 직장
+ 
+01 acknowledge v. 인정하다
+02 anniversary n. 기념일
+03 award n. 상, 상패 v. 수여하다, 주다
+04 awards ceremony n. 시상식
+05 banquet n. 연회
+06 bulletin board n. 게시판
+07 celebration n. 기념 행사
+08 citation n. 표창장; 인용문
+09 commemorate v. 기념하다
+10 congratulate v. 축하하다
+11 convene v. 회합하다, 소집하다
+12 dedication n. 헌신, 전념
+13 encourage v. 격려하다, 장려하다
+14 entertainment n. 오락; 접대
+15 enthusiastic adj. 열정적인
+16 exceed expectations 
+기대를 넘어서다
+17 excellence n. 뛰어남, 탁월함
+18 exemplary adj. 모범적인, 본보기가 되는
+19 express one’s appreciation
+감사를 표하다
+20 farewell party n. 송별회
+21 farewell speech n. 고별 연설
+22 grateful adj. 고마워하는, 감사하는
+23 gratitude n. 감사, 고마움
+24 host v. 개최하다
+25 impressive adj. 인상적인
+26 in the near[foreseeable]
+future 가까운 미래에
+27 inspire v. 고무시키다, 영감을 주다
+inspiring adj. 고무하는, 영감을 주는
+28 invitation n. 초대(장)
+29 leading adj. 선두의, 이끄는
+30 mark v. 기념하다; 흔적을 남기다
+31 morale n. 의욕, 사기
+32 regard v. 여기다, 간주하다
+33 renowned adj. 유명한
+34 respectively adv. 각자, 각각, 제각기
+35 respond to ~에 대답하다, 답장을 보내다
+36 reward A for his/her labor
+~의 노고를 치하하다
+37 RSVP (répondez s’il vous 
+plaît) 회답 주시기 바랍니다.
+38 take place 열다, 개최하다 (= be held)
+ 
+acquisition n. 인수
+acquire v. 인수하다, 얻다
+02 affect v. 영향을 미치다
+03 announce v. 발표하다, 알리다
+announcement n. 공지
+04 combine v. 결합하다
+05 come to an agreement 
+합의를 보다
+06 competition n. 경쟁
+competitiveness n. 경쟁력
+compete v. 경쟁하다
+07 concern n. 우려, 걱정
+08 confront v. 맞서다, 직면하다
+09 dominate v. 지배하다
+10 efficient adj. 효율적인
+11 eliminate v. 없애다, 제거하다
+12 emerge v. 부상하다, 부각되다
+13 established 
+adj. 확립된; 확고히 자리를 잡은
+14 expenditure n. 지출; 비용; 소비
+15 formation n. 형성; 대형, 편대
+16 found v. 설립하다
+17 go into bankruptcy 파산하다
+18 independent adj. 독립된, 독자적인
+19 integrate v. 통합시키다
+20 make[enter into] a contract
+계약을 하다
+21 market share n. 시장점유율
+22 merger n. 합병
+merge with ~와 합병하다
+23 officially adv. 공식적으로
+24 open[enter into]
+negotiations 협상을 시작하다
+25 operation n. 사업
+26 outstanding adj. 뛰어난, 걸출한
+27 press conference n. 기자 회견
+28 redundancy n. 여분; 잉여 인원
+29 resource n. 자원
+30 restructure n. 구조 조정하다
+31 statement n. 성명(서), 진술(서)
+32 takeover n. 기업[경영권] 인수
+33 the terms of the agreement
+n. 계약 조건
+34 upcoming adj. 다가오는, 곧 있을
+ 
+1 a wide selection 폭넓은 선택
+02 a wide variety[array] of 
+다양한 종류의
+03 alteration n. 개조, 변화
+04 branch office n. 지사
+05 celebrate v. 기념[축하]하다
+06 clearance sale n. 점포 정리 세일
+07 complicated adj. 복잡한
+08 consent n. 동의, 합의 v. 동의하다
+09 current adj. 현재의
+currently adv. 현재, 지금
+10 determine v. 결정하다
+11 diversified adj. 다각화된, 다양한
+12 enhance v. 향상시키다
+13 enlarge v. 확장하다
+14 expand v. 확장하다
+expansion n. 확장
+15 finalize v. 마무리짓다, 완결하다
+16 headquarters n. 본사
+17 imperative adj. 반드시 해야 하는, 긴요한
+18 initial adj. 처음의, 초기의
+19 launch v. 착수하다
+20 location n. 위치, 장소, 곳
+be located in ~에 위치하다
+21 move v. 옮기다; 진행되다
+22 opening ceremony n. 개업식
+23 original adj. 원래의
+24 outgrow v. ~보다 더 커지다
+25 prosperous adj. 번영하는, 번창하는
+26 regular customer n. 단골 고객
+27 relocate v. 이전하다, 이동하다
+28 renew a lease 임대 계약을 갱신하다
+29 reputation n. 명성, 평판
+30 retain v. 보유하다, 유지하다
+31 selection n. 선별(된 것들), 선택
+32 showcase 
+v. 소개[진열]하다 n. 공개 행사
+33 special offer n. 특별 할인
+34 specialize in ~를 전문으로 하다
+35 stock v. (상품을) 갖춰 두다 n. 재고품
+36 timely adj. 시기 적절한
+37 trade n. 거래, 무역 v. 거래하다, 매매하다
+38 transition n. 변화, 추이
+39 workplace n. 직장, 일터
+ 
+1 assembly line n. 조립 라인
+02 automate v. 자동화하다
+automation n. 자동화
+03 based in ~에 본사가 있는
+04 collective adj. 집단의; 공통의
+05 competitive edge n. 경쟁 우위
+06 component n. 부품, 요소
+07 customer demand n. 소비자 수요
+08 domestic adj. 국내의
+09 double v. 두 배가 되다
+10 equipment n. 장비, 용품
+11 existing adj. 기존의
+12 facility n. 시설
+13 in operation 작동 중인
+14 inspect v. 점검하다, 조사하다
+15 inventory n. 재고[물품] 목록
+16 labor cost n. 노동 비용, 인건비
+17 machinery n. 기계
+18 manufacturer n. 제조 업체
+19 market research n. 시장 조사
+20 maximize v. 극대화하다
+21 meet demand 수요를 충족시키다
+22 operation expenses n. 운영비
+23 output n. 생산량
+24 plant n. 공장 (= factory)
+25 potential adj. 잠재적인 n. 잠재 가능성
+26 proceed v. 진행하다
+27 produce v. 생산하다 (= manufacture) 
+28 production facility n. 생산 시설
+29 production schedule n. 생산 일정
+30 quality control n. 품질 관리
+31 quality inspection n. 품질 검사
+32 quantity n. 양
+33 reduction n. 축소, 삭감; 할인
+34 region n. 지역
+35 safety regulations n. 안전 규정
+36 shipping cost n. 운송비
+37 storage n. 저장(소), 보관(소)
+38 streamline v. 간소화하다
+39 sustainable adj. 지속 가능한
+40 warehouse n. 창고
+41 yield v. 산출하다, 생산하다
+ 
+01 accounting manager 
+n. 회계 관리자
+02 analyze v. 분석하다
+03 annual adj. 매년의, 연례의
+04 budget cut n. 예산 삭감
+05 budget report n. 예산안 보고서
+06 debt n. 채무
+07 decline/drop/decrease/
+fall in revenue 수익 감소
+08 deduction n. 공제
+09 deficit n. 적자, 결손, 부족액
+10 demonstrate v. 입증하다; 시연하다
+11 estimate for the work 
+n. 일[작업]에 대한 견적
+12 expected income n. 기대 소득
+13 expense account n. 비용 계정
+14 financial statements n. 재무제표
+15 financial update n. 재정 보고
+16 fiscal adj. 재정상의, 회계의
+17 indicator n. 지표
+18 invest v. 투자하다
+investor n. 투자자
+19 launch[release] a new
+product 신상품을 출시하다
+20 loan n. 융자, 대출 v. 대출하다
+21 loss n. 손실, 손해
+22 market value n. 시가, 시세
+23 obtain funding 자금을 획득하다
+24 overhead cost n. 경상비, 고정비(용)
+25 pay the full amount 
+총액을 지불하다
+26 present the report 
+보고서를 발표하다
+27 profit n. 이익, 수익, 이윤
+profitable adj. 수익성이 있는
+profitability n. 수익성
+28 record adj. 기록적인 n. 기록
+29 reduce costs 비용을 줄이다
+30 reimburse v. 배상하다, 변제하다
+31 release v. 공개하다, 발표하다
+32 revenue n. 수익, 세입
+33 sales figures n. 매출액
+34 shareholder n. 주주
+35 supply and demand n. 공급과 수요
+36 surplus n. 과잉; 흑자
+37 the General Affairs
+Department n. 총무부
+ 
+01 amenities n. 편의시설, 문화시설
+02 appliance n. (가정용) 기기
+03 arrange time 시간을 잡다
+04 artificial adj. 인공의; 인위적인
+05 climate control n. 실내 온도 조절기
+06 close adj. 가까운, 근접한
+07 commercial adj. 상업의; 민영의
+08 compartment n. 구획, 칸
+09 energy-efficient 
+adj. 연료 효율이 좋은
+10 floor n. 층; 바닥
+11 furnished adj. 가구가 비치된
+furnish v. (가구를) 비치하다
+12 hardwood floor n. 원목 마루
+13 landlord n. 주인, 임대주, 임대 회사
+14 lease n. 임대차 계약 v. 임대[임차]하다
+15 lease agreement n. 임대차 계약서
+16 locate v. ~의 정확한 위치를 찾아내다
+17 modern adj. 현대의, 현대적인
+18 multipurpose adj. 다목적의
+19 occupy v. 차지하다, 건물을 사용하다
+20 overlook v. 내려다보다
+21 ownership n. 소유(권)
+22 property n. 부동산, 재산
+23 put down a deposit
+보증금을 걸다
+24 real estate n. 부동산 중개업
+25 reconstruct v. 재건하다
+26 renew v. 갱신하다
+27 renovate v. 개조하다
+renovation n. 개조
+28 rent v. 세내다[임차하다] 
+ n. 집세, 방세, 지대, 임차료
+29 residence n. 주택, 거주지
+resident n. 거주자
+residential adj. 주거의; 거주하기 좋은
+30 tenant n. 세입자, 임차인
+31 tour n. 방문, 견학
+32 transform 
+v. 완전히 바꿔 놓다; 변형시키다
+33 unit n. 한 가구
+34 view n. 경관
+35 within walking distance 
+걸어서 갈 수 있는 거리 내에
+ 
+01 architecture n. 건축술, 건축 양식
+architectural adj. 건축의
+02 at a cost of ~의 비용으로
+03 be decorated with ~로 장식된
+04 blueprint n. 청사진
+05 build an extension[annex]
+증축하다
+06 building materials n. 건축 자재
+07 characterize v. ~의 특징이 되다
+08 completion date n. 완공일
+09 construction n. 건설, 공사
+construct v. 건설하다
+10 draw v. 끌다, 끌어들이다
+11 elaborate adj. 정교한; 공을 들인
+12 entrance n. 입구
+13 extend v. 연장하다; 확장하다
+14 exterior adj. 외부의
+15 façade n. (건물의) 정면, 앞면
+16 floor plan n. 평면도
+17 go through ~을 거치다, 겪다
+18 groundbreaking adj. 획기적인
+19 interior adj. 내부의
+20 landmark n. 주요 지형물, 랜드마크
+21 land use n. 토지 이용
+22 lot n. 부지, 구획
+23 masterpiece n. 걸작, 명작
+24 modernize v. 현대화하다
+25 premises n. 부지
+26 preserve v. 지키다; 보존하다
+27 redesign v. 재설계하다
+28 reinforce v. 보강하다
+29 remodel v. 개조하다, 리모델링하다
+30 repairs n. 수리 작업
+31 residential area n. 주거지
+32 restoration n. 복구, 복원
+restore v. 복원하다
+33 site inspection 현장 점검
+34 structure n. 구조물
+35 tourist attraction n. 관광 명소
+36 undergo n. 겪다, 받다
+37 venue n. 장소
+38 wing n. 건물의 동, 부속 건물
+ 
+01 accessible adj. 접근할 수 있는
+02 alleviate v. 완화하다
+03 be parallel to ~와 평행인, 나란히 있는
+04 be stuck in traffic 교통이 막힌
+05 boulevard n. 대로
+06 building site n. 건설 현장
+07 bumper to bumper 차가 꽉 들어찬
+08 commute v. 통근하다 n. 통근
+09 congestion n. 혼잡
+10 control traffic 교통을 통제하다
+11 crosswalk n. 횡단보도
+12 destination n. 행선지, 목적지
+13 detour n. 우회로, 돌아가는 길
+14 expressway n. 고속도로 (= freeway)
+15 heavy traffic 극심한 교통량
+16 impose v. 도입하다, 부과하다
+17 jammed adj. 꼼짝 못하는, 빽빽한
+18 jaywalk v. 무단 횡단하다
+19 lane n. 차선
+20 make a detour 우회하다
+21 mileage n. 주행거리
+22 official 
+n. 공무원, 관리, 임원 adj. 공식적인
+23 overpass n. 고가도로 (= flyover)
+24 parking permit n. 주차 허가증
+25 pave v. 도로를 포장하다
+pavement n. 인도, 보도
+26 pay a fine 벌금을 물다
+27 pedestrian n. 보행자
+28 public transportation n. 대중교통
+29 repave v. 도로를 재포장하다
+30 road closure 도로 폐쇄
+31 road sign 도로 표지판
+32 section n. 구간
+33 speed limit n. 제한 속도
+34 toll n. 통행료, 사용세
+35 tow v. 견인하다, 예인하다
+36 traffic congestion n. 교통 혼잡
+37 traffic[signal] light n. 신호등
+38 transportation n. 수송, 운송
+39 under construction 공사 중인
+40 vehicle n. 차량, 탈것
+41 widen v. 넓히다
+widening n. 확장
+ 
+01 accommodate v. 수용하다
+02 admission fee n. 입장료
+03 advance registration n. 사전 등록
+04 appreciate v. 감상하다
+05 artistic adj. 예술적인
+06 arts and crafts n. 수공예품
+07 auction n. 경매
+08 audience n. 관객, 청중
+09 autograph n. 서명, 사인 v. 서명하다
+10 available facilities 
+이용 가능한 편의시설
+11 be booked up 예매[예약]가[이] 끝나다
+12 be sold out 매진되다
+13 box office n. 매표소
+14 cast n. 출연자들, 배역 v. 배역을 정하다
+15 choreography n. 안무
+16 community n. 지역사회
+17 compose v. 작곡하다
+18 conduct v. 지휘하다
+19 costume n. 의상, 복장
+20 critic n. 평론가
+21 debut n. 데뷔, 첫 출연 v. 데뷔[첫 출연]하다
+22 direction n. 연출
+23 entertain v. 즐겁게 해주다
+24 exhibition n. 전시(회)
+exhibit v. 전시하다
+25 free admission n. 무료 입장
+26 hosted by ~에 의해 주최된
+27 impeccable adj. 흠 잡을 데 없는
+28 intermission n. 중간 휴식시간
+29 lead[leading, starring] role
+n. 주역, 주연
+30 local art n. 지역 미술[예술]
+31 matinée n. (연극•영화 등의) 낮 공연
+32 performance n. 공연
+perform v. 공연하다, 연주하다
+33 premiere n. (영화의) 개봉; (연극의) 초연
+34 running time n. 상영 시간
+35 seating capacity n. 좌석 수
+36 sponsor v. 후원하다 n. 후원자
+37 star v. 주연을 맡다 n. 스타, 인기 배우
+38 supporting role n. 조역, 조연
+39 theatrical adj. 연극[공연]의
+ 
+01 aid n. 원조, 자원 v. 돕다
+02 beneficial adj. 유익한, 이로운
+03 campaign n. 캠페인 v. 캠페인을 벌이다
+04 cause n. 명분, 목적; 원인, 이유
+05 charity n. 자선 단체
+charitable adj. 자선의
+06 collect v. 모으다
+07 committee n. 위원회
+08 community center 지역 문화 회관
+09 contributor n. 후원자
+contribution n. 기부금
+contribute v. 기부하다, 기여하다
+10 dedicate v. 바치다, 전념하다
+11 donation n. 기부(금)
+donate v. 기부하다
+12 enlightening adj. 계몽적인, 깨우치는
+13 entry n. 입장
+14 finance n. 자금 v. 자금을 대다
+15 foundation n. 설립; 재단
+16 fund v. 자금을 대다
+funding n. 재정 지원
+17 fundraising n. 기금 모금
+18 generous adj. 후한, 넉넉한
+generosity n. 너그러움
+19 invite v. 초대하다
+20 local adj. 지역의 n. 현지인
+21 municipal adj. 지방 자치제의, 시의
+22 opening speech n. 개회사
+23 patron n. 후원자, 고객
+24 philanthropic adj. 자선의, 인정 많은
+25 pledge n. 맹세, 서약 v. 맹세[서약]하다
+26 proceeds n. 수익금
+27 public adj. 공공의 n. 대중, 일반
+28 reinforce v. 강화하다; 보강하다
+29 revitalize v. 재활성화시키다
+30 sponsored by ~의 후원을 받은
+sponsorship n. 후원, 협찬
+31 take care of 돌보다; 처리하다
+32 unprecedented adj. 전례가 없는
+33 volunteer n. 자원봉사자 v. 자원하다

@@ -48,23 +48,29 @@ class Smi:
                         self.raw_text = file.read()
                         file.close()
                     except:
-                        raise SamitizeError(-2)
+                        try:
+                            file = codecs.open(filepath, encoding='ansi')
+                            self.raw_text = file.read()
+                            file.close()
+                        except:
+                            raise SamitizeError(-2)
         self.raw_text = self.raw_text.replace('\r\n', '\n')
         self.raw_text = self.raw_text.replace('\n\r', '\n')
 
         # Detecting signal for sinc verification
         #주석 <!--~-->
         re_comment = re.compile('<!--\n+(.+)\n+-->')
-        re_sinc = re.compile('sinc =(.+)')
+        re_sinc = re.compile('sinc =(.+)',flags=re.IGNORECASE)
         cms = re_comment.findall(self.raw_text)
         if cms is not None:
             for cm in cms:
-                if 'true' in re_sinc.findall(cm)[0].lower():
+                sinclst = re_sinc.findall(cm)
+                if len(sinclst) >0 and 'true' in sinclst[0].lower():
                     self.sinc_verification = True
 
         # Detect Korean / English key
         # 한 키가 None이면 해당 자막은 없다고 보면 됨
-        re_sig = re.compile('Class=(.*)>')
+        re_sig = re.compile('Class=(.*)>',flags=re.IGNORECASE)
         signals = set(re_sig.findall(self.raw_text))
         for sig in signals:
             if eng_signal is None:
@@ -78,13 +84,32 @@ class Smi:
 
                 elif 'kr' in sig.lower():
                     self.kor_signal = sig
+        tokenized_list = []
+        buf = []
+        re_line = re.compile('<SYNC Start=[0-9]+><P Class=\w+>.*',flags=re.IGNORECASE)
 
-        re_line = re.compile('<SYNC Start=([0-9]+)><P Class=(\w+)>\n?(.*)\n')
+        start = False
+
+        for line in self.raw_text.split('\n'):
+            if re_line.match(line):
+                start = True
+                if len(buf) >0:
+                    tokenized_list.append(' '.join(buf))
+                    buf = []
+                tokenized_list.append(line)
+            else:
+                if start:
+                    buf.append(line)
+
+        newtext = '\n'.join(tokenized_list)
+
+        re_line2 = re.compile('<SYNC Start=([0-9]+)><P Class=(\w+)>\n?(.*)\n',flags=re.IGNORECASE)
+
         #패턴 : <SYNC Start=(1258654)><P Class=EnglishSC> 하고 (문자1이상) + \n<, greedy compile
-        lines = re_line.findall(self.raw_text)
+        lines = re_line2.findall(newtext)
 
         if debug == True:
-            re_line2 = re.compile('<SYNC Start=[0-9]+><P Class=\w+>\n?.*\n')
+            re_line2 = re.compile('<SYNC Start=[0-9]+><P Class=\w+>\n?.*\n',flags=re.IGNORECASE)
             lines2 = re_line2.findall(self.raw_text)
             print(''.join(lines2[:50]))
 
@@ -154,7 +179,9 @@ class Smi:
                     self.subtitles.append(s)
                     i_k +=1
 
-    def to_csv(self, title, dest ='./', all = False, encoding ='EUC-KR'):
+
+
+    def to_csv(self, title, dest ='./', all = False, encoding ='cp949'):
         subdf = pd.DataFrame.from_dict(self.subtitles)
         sub_path = prepare.get_save_path(dest, title, format ='.csv')
         print('Saving to {}'.format(sub_path))
@@ -207,6 +234,12 @@ class Smi:
 # Class End
 ##################################################################
 
+def encoding_edit(path, encoding = None):
+    if encoding is None:
+        text = open(path, 'r').read()
+    else:
+        text = open(path, 'r', encoding = encoding).read()
+    open(path, 'w').write(text.encode('cp949', errors = 'replace').decode('cp949'))
 
 def export_smi(sentences, start_time = 0):
     textlist = ['<SAMI>', '<BODY>']

@@ -7,3 +7,10 @@ __pycache__/
 *.wav
 *.zip
 OriginalData/
+bigbang/
+friends/
+merge/
+silicon/
+srt/
+stt/
+translate/

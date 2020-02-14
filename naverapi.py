@@ -64,7 +64,7 @@ def papago_translate(text, verbose = False):
         response_body = response.read()
         if verbose:
             print(response_body.decode('utf-8')[:1000])
-            text = testparser.findall(response_body.decode('utf-8'))[0]
+        text = testparser.findall(response_body.decode('utf-8'))[0]
         return text
     else:
         print("Error Code:" + rescode)
@@ -88,7 +88,7 @@ def slice_video(video_name, directory, sec = 14.8, overlap = 1):
     clip_names = []
     for i in range(n_slice):
 
-        clip_name = video_name.split('.')[0] + '_%2d' % i + '.' + video_name.split('.')[1]
+        clip_name = video_name.split('.')[0] + '_' + ('{}'.format(1000000+i))[-2:]+ '.' + video_name.split('.')[1]
         clip_start = i*(sec-overlap)
         clip_end = clip_start + sec
         ffmpeg_extract_subclip(filename = os.path.join(directory, video_name), t1 = clip_start, t2 = clip_end,
@@ -137,6 +137,7 @@ def slice_and_stt(video_names, directory, **kwargs):
     if type(video_names) == 'name.avi':
         video_names = [video_names]
 
+    verbose = kwargs.pop('verbose', False)
     #out_info.append(dict(out_name=out_name, clip_start=clip_start,
     #                    clip_end=clip_end, sub_start=sub_start, sub_end=sub_end))
     log_list = []
@@ -149,7 +150,7 @@ def slice_and_stt(video_names, directory, **kwargs):
 
         for clipname in clip_names:
             audio_name = clipname.split('.')[0] + '.mp3'
-            txt = stt(audio_name, directory=directory)
+            txt = stt(audio_name, directory=directory, verbose = verbose)
 
         log_list.append(dict(video_name=video_name, clip_names=' '.join(clip_names)))
 
@@ -160,9 +161,15 @@ def slice_and_stt(video_names, directory, **kwargs):
     df.to_csv(df_path, encoding= CSV_ENCODING)
 
 if __name__ == '__main__':
-    video_names = ['FR1' + ('{}'.format(i + 1000))[-2:] + '.avi' for i in range(1,24)]
+    #####################
+    #
+    #   자막합치기!
+    #   태스크별로 따로 메인파일만들기 이거 자막만들기 메인으로 넘겨!!
+    #
+    ##############################
+    video_names = ['FR1' + ('{}'.format(i + 1000))[-2:] + '.mp4' for i in range(1,8)]
     print(video_names)
-    slice_and_stt(video_names=video_names, directory='./stt', sec = 55, overlap = 1)
+    slice_and_stt(video_names=video_names, directory='./stt', sec = 15, overlap = 0.5, verbose = True)
 
     #마지막 로그 저장
     ################

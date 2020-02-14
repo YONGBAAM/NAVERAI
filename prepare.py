@@ -70,7 +70,7 @@ def make_indexing(sminames, output_name, movie_dir, verbose = False):
     df.to_csv(df_path, encoding=CSV_ENCODING)
     return df
 
-def make_word_list(originals, original_to_derivative, smi_df_lists, output_name,
+def make_word_list(originals, original_to_derivative,original_to_meaning, smi_df_lists, output_name,
                    before_window = 20000, after_window = 10000, output_dir ='./'):
     Author = 'YB'
     #####################################
@@ -102,6 +102,10 @@ def make_word_list(originals, original_to_derivative, smi_df_lists, output_name,
     ori_counter = {}
     for ori in originals:
         ori_counter[ori] = 0
+
+    ori_counter_bigbang = {}
+    for ori in originals:
+        ori_counter_bigbang[ori] = 0
 
     # list가 아니면 list화
     if not type(smi_df_lists) == type([]):
@@ -144,15 +148,23 @@ def make_word_list(originals, original_to_derivative, smi_df_lists, output_name,
                 d['clip_index'] = ori_counter[ori] + 10
                 ori_counter[ori] +=1
 
+                if d['video_code'][:2] == 'BB':
+                    ori_counter_bigbang[ori] +=1
+
                 # pick neighbors of sentences
                 smipath = os.path.join(d['movie_dir'], d['video_code'] + '.smi')
                 smi = smipy.Smi(smipath)
                 neighbor_start = d['start'] - before_window
                 neighbor_end = d['end'] + after_window
                 cut_list, cut_ind = smi.slice(start_time=neighbor_start, end_time=neighbor_end)
-                _senti = cut_ind.index(d['subtitle_ind'])
-                before_list = cut_list[:_senti]
-                after_list = cut_list[_senti+1:]
+                try:
+                    _senti = cut_ind.index(d['subtitle_ind'])
+                    before_list = cut_list[:_senti]
+                    after_list = cut_list[_senti + 1:]
+                except:
+                    before_list = []
+                    after_list = []
+
                 before_text = '\n'.join([sent['eng'] for sent in before_list])
                 after_text = '\n'.join([sent['eng'] for sent in after_list])
                 _before_kr = '\n'.join([sent['kor'] for sent in before_list])
@@ -167,9 +179,14 @@ def make_word_list(originals, original_to_derivative, smi_df_lists, output_name,
                 d['_before_kor'] = _before_kr
                 d['_after_kor'] = _after_kr
 
+                d['word_meaning'] = original_to_meaning[ori]
+
                 d['verify'] = 'F'
 
-                res_list.append(d)
+                if ori_counter_bigbang[ori] > 10:
+                    pass
+                else:
+                    res_list.append(d)
         df = pd.DataFrame.from_dict(res_list)
 
     #abstract result
@@ -188,14 +205,17 @@ def make_word_list(originals, original_to_derivative, smi_df_lists, output_name,
     df_abs.to_csv(out_path_abs, encoding = CSV_ENCODING)
 
 
-def make_clip(words_path, title, out_dir = './clips', pad = 2000, encoding = CSV_ENCODING):
+def make_clip(words_path, title, out_dir = './clips', pad = 2000, encoding = 'utf-8'):
     ##########################################
     #
     #   clip
     #   밑 변수 순서나 인덱싱 재정리할것!!
     #
     ##########################################
-    worddf = pd.read_csv(words_path, encoding = encoding)
+    try:
+        worddf = pd.read_csv(words_path, encoding = encoding)
+    except:
+        worddf = pd.read_csv(words_path, encoding = CSV_ENCODING)
 
     clip_result_list = []
     for i in range(len(worddf)):
@@ -207,8 +227,22 @@ def make_clip(words_path, title, out_dir = './clips', pad = 2000, encoding = CSV
         clip_index = row['clip_index']
         start_time = row['start'] - pad
         end_time = row['end'].item() + pad
+        word_meaning = row['word_meaning']
         movie_dir = row['movie_dir']
         video_code = row['video_code']
+
+        if video_code[:2] == 'BB' :
+            video_name = 'Big Bang Theory'
+        elif video_code[:2] == 'SI':
+            video_name = 'Silicon Valley'
+        elif video_code[:2] == 'FR':
+            video_name = 'Friends'
+        else:
+            video_name = ''
+
+        video_name = video_name + ' ' + 'Season {} Ep{}'.format(video_code[2], video_code[3:])
+
+
 
         eng_sent = row['eng_sent']
         word_ind = row['word_ind']
@@ -264,19 +298,22 @@ def make_clip(words_path, title, out_dir = './clips', pad = 2000, encoding = CSV
             f.write(cliptxt)
 
         # export sliced video
-        ffmpeg_extract_subclip(filename = os.path.join(movie_dir, video_code + '.mkv'),
+        try:
+            ffmpeg_extract_subclip(filename = os.path.join(movie_dir, video_code + '.mkv'),
                                t1 =clip_start / 1000, t2 =clip_end / 1000,
                                targetname=os.path.join(out_dir, clip_code + '.mp4'))
-
+        except:
+            print('error in {}'.format(video_code))
+            continue
         # export final db for app
         d = dict(word_ind = word_ind, ori_word = ori, clip_code = clip_code,
                  eng_sent =eng_sent, kor_sent = kor_sent,
                  sent_start = sent_start, sent_end = sent_end, word_loc = word_loc, line_loc = before_no, whole_eng = whole_eng,
-                 whole_kor = whole_kor,
+                 whole_kor = whole_kor, word_meaning = word_meaning, video_name = video_name,
                  _v_s = clip_start, _v_e = clip_end)
         clip_result_list.append(d)
     df = pd.DataFrame.from_dict(clip_result_list)
-    df.to_csv(get_save_path(dir = out_dir, name = title, format = '.csv'), encoding = encoding)
+    df.to_csv(get_save_path(dir = out_dir, name = title, format = '.csv'), encoding = CSV_ENCODING)
 
 
 
@@ -304,7 +341,7 @@ def to_sentence(raw_sent):
     #<br>태그는 ' '로
     sent = re.sub('<BR>', ' ', sent)
     #나머지태그는 걍 제외
-    sent = re.sub('<.*>', ' ', sent)
+    sent = re.sub('<.{1,3}>', ' ', sent)
 
     sent = sent.strip()
 
